@@ -50,7 +50,8 @@ class ParseSDF(beam.PTransform):
 
   def expand(self, pcollection):
     def parse_molecules(filename):
-      with tf.io.gfile.Open(filename) as f:
+#      with tf.gfile.Open(filename) as f:
+      with tf.io.gfile.GFile(filename) as f:
         for json_molecule in sdf.parse_molecules(f):
           yield json_molecule
 

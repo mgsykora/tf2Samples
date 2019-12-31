@@ -6,3 +6,5 @@ tfx==0.15.0
 tensorflow-data-validation==0.15.0 
 tensorflow_transform==0.15.0 
 tensorflow_model_analysis==0.15.4
+
+apache_beam==2.16

@@ -17,7 +17,7 @@ set -e
 unset WORK_DIR
 MAX_DATA_FILES=5
 PROJECT=$(gcloud config get-value project || echo $PROJECT)
-REGION=us-central1
+REGION=us-west1
 while [[ $# -gt 0 ]]; do
   case $1 in
     --work-dir)

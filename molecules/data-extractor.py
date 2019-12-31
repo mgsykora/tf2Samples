@@ -83,7 +83,7 @@ def extract_data_file(ftp_file, data_dir):
 
     memfile.seek(0)
 #    with tf.gfile.Open(sdf_file, 'w') as f:
-    with tf.io.gfile.Open(sdf_file, 'w') as f:
+    with tf.io.gfile.GFile(sdf_file, 'w') as f:
       gzip_wbits_format = zlib.MAX_WBITS | 16
       contents = zlib.decompress(memfile.getvalue(), gzip_wbits_format)
       f.write(contents)
