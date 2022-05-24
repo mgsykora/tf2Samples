@@ -1,4 +1,4 @@
-tensorflow==2.0
+tensorflow==2.6.4
 tensorboard==2.0
 grpcio==1.24.3
 
