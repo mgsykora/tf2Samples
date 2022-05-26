@@ -18,7 +18,7 @@ import setuptools
 REQUIRED_PACKAGES = [
     'apache-beam[gcp]==2.11.*',
     'tensorflow-transform==0.13.*',
-    'tensorflow==1.13.*',
+    'tensorflow>=1.13,<2.8',
 ]
 
 setuptools.setup(
